@@ -35,3 +35,12 @@ header{
 .right a{
     color: var(--color-secundary);
 }
+
+.image{ 
+    margin-top: 100px;
+    margin-left: 1000px;
+}
+
+.image img{
+    width: 600px;
+}

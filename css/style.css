@@ -39,7 +39,7 @@ header{
 
 .image{ 
     margin-top: 100px;
-    margin-left: 1100px;
+    margin-left: 1000px;
 }
 
 .image img{
@@ -68,4 +68,62 @@ header{
     width: 210px;
     height: 40px;
     font-size: 25px;
+}
+
+
+
+
+.about-us{ 
+    margin-top: 230px;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax8(300px, 1fr));
+    justify-content: center;
+    align-items: center;
+}
+
+.contenido2{
+    margin-left: 1030px;
+    margin-top: -830px;
+}
+
+.contenido2 h2{
+    text-align: center;
+    font-size: 2rem;
+    color: var(--color-primary);
+    font-weight: 400;
+}
+
+.contenido2, .contenido2 h2{
+    text-align: left;
+    color: var(--color-primary);
+    font-weight: 400;
+}
+
+.contenido2 h3{
+    font-size: 3rem;
+    color: var(--color-secundary);
+}
+
+.contenido2 p{
+    font-size: 2rem;
+    color: var(--color-secundary);
+    font-weight: 300;
+}
+
+.image2 img{
+    width: 100%;
+    margin-left: 90px;
+    max-width: 600px;
+    padding-left: 8%;
+}
+
+.contenido2 button{
+    color: var(--color-secundary);
+    background-color: var(--color-primary);
+    border: 1px solid var(--color-primary);
+    font-size: 2rem;
+    margin-top: 20px;
+    width: 200px;
+    height: 60px;
 }

@@ -87,20 +87,20 @@ header{
     margin-top: -830px;
 }
 
-.contenido2 h2{
+.contenido2 h3{
     text-align: center;
     font-size: 2rem;
     color: var(--color-primary);
     font-weight: 400;
 }
 
-.contenido2, .contenido2 h2{
+.contenido2, .contenido2 h3{
     text-align: left;
     color: var(--color-primary);
     font-weight: 400;
 }
 
-.contenido2 h3{
+.contenido2 h2{
     font-size: 3rem;
     color: var(--color-secundary);
 }

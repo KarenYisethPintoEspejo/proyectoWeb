@@ -122,7 +122,7 @@ header{
     color: var(--color-secundary);
     background-color: var(--color-primary);
     border: 1px solid var(--color-primary);
-    font-size: 2rem;
+    font-size: 1.7rem;
     margin-top: 20px;
     width: 200px;
     height: 60px;
@@ -241,8 +241,50 @@ header{
     color: var(--color-secundary);
 }
 
-.tarjetas_servicios h1{
-    color: var(--color-secundary);
+
+.fin{
+    height: 350px;
+    width: 1300px;
+    margin-left: 260px;
     text-align: center;
-    font-size: 2.8rem;
+    background-color: var(--color-background2);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.fin h2{
+    font-weight: 600;
+    background-color: var(--color-background2);
+    color: var(--color-font);
+    padding: 2%;
+    font-size: 3rem;
+}
+
+.fin button{
+    color: var(--color-secundary);
+    background-color: var(--color-primary);
+    border: 1px solid var(--color-primary);
+    font-size: 1.7rem;
+    margin-top: 20px;
+    width: 200px;
+    height: 60px;
+}
+
+.footer_fin{
+    width: 100%;
+    border-radius: 2%;
+}
+
+.footer_fin h3{
+    font-size: 1.7rem;
+    text-align: center;
+    color: var(--color-secundary);
+}
+
+.footer_fin h4{
+    font-size: 1.4rem;
+    text-align: center;
+    color: var(--color-secundary);
 }

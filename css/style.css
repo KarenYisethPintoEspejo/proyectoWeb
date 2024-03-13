@@ -132,6 +132,7 @@ header{
     margin-top: -70px;
 }
 .titulo h2{
+    font-size: 2.5rem;
     color: var(--color-secundary);
     display: flex;
     justify-content: center;
@@ -142,9 +143,12 @@ header{
     display: flex;
     justify-content: center;
 } 
-
+.food_menu{
+    margin-left: 60px;
+    margin-right: -230px;
+}
 .gallery{
-    width: 85%;
+    width: 70%;
     margin: 0 auto;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -155,7 +159,7 @@ header{
 }
 
 .tarjetas_menu{
-    background-color: var(--color-background);
+    background-color: var(--color-background2);
     padding: 40px;
     border-radius: 10px solid red;
     box-sizing: 6px 6px var(--color-font);
@@ -163,6 +167,7 @@ header{
 }
 
 .tarjetas_menu img{
+    background-color: var(--color-background2);
     text-align: center;
     width: 100%;
     max-width: 250px;
@@ -172,7 +177,11 @@ header{
     padding: 5%;
 }
 
+.tarjetas_menu h2{
+    background-color: var(--color-background2);
+}
 .tarjetas_menu h3{
+    background-color: var(--color-background2);
     font-size: 1.5rem;
     font-weight: 300;
     text-align: center;
@@ -180,6 +189,7 @@ header{
 }
 
 .tarjetas_menu p{
+    background-color: var(--color-background2);
     font-size: 1.1rem;
     text-align: center;
     color: var(--color-primary);

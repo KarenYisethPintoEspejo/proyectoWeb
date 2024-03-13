@@ -16,6 +16,7 @@ header{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+
 }
 
 .left{
@@ -25,16 +26,36 @@ header{
     font-size: 32px;
 }
 
-.right{
-    margin-right: 70px;
+.right {
+    margin-right: -170px;
     margin-top: 29px;
     font-size: 30px;
     display: flex;
     gap: 70px;
 }
 
-.right a{
+.right a {
     color: var(--color-secundary);
+    position: relative; 
+}
+
+.right a:hover {
+    color: var(--color-primary); 
+}
+
+.right a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -3px; 
+    width: 100%;
+    height: 2px; 
+    background-color: transparent; 
+    transition: background-color 0.3s ease;
+}
+
+.right a:hover::after {
+    background-color: #ff702a; 
 }
 
 .image{ 
@@ -59,7 +80,9 @@ header{
     margin-left: 280px;
 }
 
-.contenido button{
+
+
+.contenido button {
     color: var(--color-secundary);
     background: var(--color-primary);
     border: 1px solid var(--color-primary);
@@ -68,8 +91,14 @@ header{
     width: 210px;
     height: 40px;
     font-size: 25px;
+    transition: color 0.3s ease; 
 }
 
+.contenido button:hover {
+    color: var(--color-font); 
+    background-color: var(--color-secundary);
+   
+}
 
 
 
@@ -118,15 +147,24 @@ header{
     padding-left: 8%;
 }
 
-.contenido2 button{
+.contenido2 button {
     color: var(--color-secundary);
-    background-color: var(--color-primary);
+    background: var(--color-primary);
     border: 1px solid var(--color-primary);
-    font-size: 1.7rem;
     margin-top: 20px;
-    width: 200px;
-    height: 60px;
+    
+    width: 210px;
+    height: 40px;
+    font-size: 25px;
+    transition: color 0.3s ease; 
 }
+
+.contenido2 button:hover {
+    color: var(--color-font); 
+    background-color: var(--color-secundary);
+
+}
+
 
 .food_menu{
     margin-top: -70px;
@@ -164,6 +202,12 @@ header{
     border-radius: 10px solid red;
     box-sizing: 6px 6px var(--color-font);
     text-align: center;
+    transition: transform 0.3s ease, filter 0.3s ease; 
+}
+
+.tarjetas_menu:hover {
+    transform: scale(1.05); 
+    filter: brightness(90%); 
 }
 
 .tarjetas_menu img{
@@ -218,6 +262,12 @@ header{
 .tajetas_servicios{
     width: 100%;
     border-radius: 2%;
+    transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.tarjetas_servicios:hover {
+    transform: scale(1.05); 
+    filter: brightness(90%); 
 }
 
 .tarjetas_servicios img{
@@ -270,7 +320,15 @@ header{
     margin-top: 20px;
     width: 200px;
     height: 60px;
+    transition: color 0.3s ease; 
 }
+
+.fin button:hover {
+    color: var(--color-primary); 
+    background-color: var(--color-font);
+
+}
+
 
 .footer_content{
     width: 1300px;
@@ -292,10 +350,35 @@ header{
 
 }
 
-.footer_fin h3{
+
+.footer_fin h3 {
     font-size: 1.8rem;
-    
     color: var(--color-secundary);
+    position: relative; 
+    display: inline-block; 
+}
+
+
+.footer_fin h3::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -3px; 
+    width: auto;
+    max-width: 70%;
+    height: 2px; 
+    background-color: var(--color-primary);
+    transition: width 0.3s ease; 
+}
+
+.footer_fin h3:hover {
+    color: var(--color-primary); 
+}
+
+
+
+.footer_fin h3:hover::after {
+    width: 100%; 
 }
 
 .footer_fin h4{
@@ -306,15 +389,40 @@ header{
 }
 
 .footer_fin2{
+    height: 45px;
     width: 50%;
     border-radius: 2%;
     display: flex;
 }
 
-.footer_fin2 h3{
+
+.footer_fin2 h3 {
     font-size: 1.8rem;
     color: var(--color-secundary);
+    position: relative; 
+    display: inline-block; 
 }
+
+
+.footer_fin2 h3::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -3px; 
+    width: auto; 
+    max-width: 100%; 
+    height: 2px; 
+    background-color: var(--color-primary);
+    transition: width 0.3s ease; 
+}
+.footer_fin2 h3:hover {
+    color: var(--color-primary); 
+}
+
+.footer_fin2 h3:hover::after {
+    width: 100%; 
+}
+
 .icons {
     margin-left: -165px;
     margin-top: 60px;

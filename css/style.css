@@ -127,3 +127,60 @@ header{
     width: 200px;
     height: 60px;
 }
+
+.food_menu{
+    margin-top: -70px;
+}
+.titulo h2{
+    color: var(--color-secundary);
+    display: flex;
+    justify-content: center;
+}
+
+.titulo h3{
+    color: var(--color-primary);
+    display: flex;
+    justify-content: center;
+} 
+
+.gallery{
+    width: 85%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    justify-content: center;
+    align-items: center;
+    gap: 2%;
+    padding: 4%;
+}
+
+.tarjetas_menu{
+    background-color: var(--color-background);
+    padding: 40px;
+    border-radius: 10px solid red;
+    box-sizing: 6px 6px var(--color-font);
+    text-align: center;
+}
+
+.tarjetas_menu img{
+    text-align: center;
+    width: 100%;
+    max-width: 250px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 5%;
+}
+
+.tarjetas_menu h3{
+    font-size: 1.5rem;
+    font-weight: 300;
+    text-align: center;
+    color: var(--color-font);
+}
+
+.tarjetas_menu p{
+    font-size: 1.1rem;
+    text-align: center;
+    color: var(--color-primary);
+}

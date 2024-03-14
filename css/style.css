@@ -10,6 +10,8 @@
     text-decoration: none;
 }
 
+
+
 header{
     width: 100%;
     height: 70px;
@@ -20,14 +22,16 @@ header{
 }
 
 .left{
+    width: 100vh;
     margin-top: 20px;
-    margin-left: 250px;
+    margin-left: 50px;
     color: var(--color-primary);
     font-size: 32px;
 }
 
 .right {
-    margin-right: -120px;
+    width: 100vh;
+    /* margin-right: -2px; */
     margin-top: 29px;
     font-size: 30px;
     display: flex;
@@ -59,25 +63,25 @@ header{
 }
 
 .image{ 
-    margin-top: 50px;
+    margin-top: 120px;
     margin-left: 1000px;
 }
 
 .image img{
-    width: 120%;
+    width: 70%;
 }
 
 .contenido h2{
     color: var(--color-primary);
     font-size: 100px;
     margin-top: -500px;
-    margin-left: 280px;
+    margin-left: 200px;
 }
 
 .contenido h3{
     color: var(--color-secundary);
     font-size: 40px;
-    margin-left: 280px;
+    margin-left: 200px;
 }
 
 
@@ -87,7 +91,7 @@ header{
     background: var(--color-primary);
     border: 1px solid var(--color-primary);
     margin-top: 20px;
-    margin-left: 280px;
+    margin-left: 200px;
     width: 15%;
     height: 40px;
     font-size: 25px;
@@ -96,7 +100,6 @@ header{
 
 .contenido button:hover {
     color: var(--color-font); 
-    background-color: var(--color-secundary);
    
 }
 
@@ -112,11 +115,12 @@ header{
 }
 
 .contenido2{
-    margin-left: 1030px;
-    margin-top: -830px;
+    margin-left: 800px;
+    margin-top: -960px;
 }
 
 .contenido2 h3{
+    margin-left: -130px;
     text-align: center;
     font-size: 2rem;
     color: var(--color-primary);
@@ -130,11 +134,13 @@ header{
 }
 
 .contenido2 h2{
+    margin-left: -130px;
     font-size: 3rem;
     color: var(--color-secundary);
 }
 
 .contenido2 p{
+    margin-left: -130px;
     font-size: 1.6rem;
     color: var(--color-secundary);
     font-weight: 300;
@@ -142,12 +148,13 @@ header{
 
 .image2 img{
     width: 100%;
-    margin-left: 90px;
+    margin-left: -250px;
     max-width: 600px;
     padding-left: 8%;
 }
 
 .contenido2 button {
+    margin-left: -130px;
     color: var(--color-secundary);
     background: var(--color-primary);
     border: 1px solid var(--color-primary);
@@ -160,13 +167,14 @@ header{
 
 .contenido2 button:hover {
     color: var(--color-font); 
-    background-color: var(--color-secundary);
 
 }
 
 
 .food_menu{
     margin-top: -70px;
+    /* margin-left: 60px;
+    margin-right: 100px; */
 }
 .titulo h2{
     font-size: 2.5rem;
@@ -180,10 +188,6 @@ header{
     display: flex;
     justify-content: center;
 } 
-.food_menu{
-    margin-left: 60px;
-    margin-right: -230px;
-}
 .gallery{
     width: 70%;
     margin: 0 auto;
@@ -239,7 +243,7 @@ header{
 }
 
 .services{
-    margin-left: 150px;
+    /* margin-left: 10px; */
     margin-top: 80px;
     width: 100%;
     height: 100vh;
@@ -294,7 +298,7 @@ header{
 .fin{
     height: 350px;
     width: 88%;
-    margin-left: 260px;
+    margin-left: 130px;
     text-align: center;
     background-color: var(--color-background2);
     display: flex;
@@ -323,16 +327,14 @@ header{
 }
 
 .fin button:hover {
-    color: var(--color-primary); 
-    background-color: var(--color-font);
-
+    color: var(--color-font); 
 }
 
 
 .footer_content{
     width: 120%;
     height: 250px;
-    margin-left: 180px;
+    /* margin-left: 80px; */
     display: flex;
     justify-content: space-evenly;
     
@@ -436,6 +438,256 @@ header{
 }
 
 
-@media (width <800px){
-    
+.right{
+    display: flex;
+    width: 100%;
+    color: var(--color-secundary);
+    display: flex;
+    width: 100%;
+    list-style: none;
+    justify-content: space-around;
+    gap: 15px;
 }
+.right a{
+    text-decoration: none;
+    color: var(--color-secundary);
+}
+.right a{
+    color: var(--color-secundary);
+}
+.right a:hover{
+    transition: 0.3s ease;
+    scale: 1.2;
+    color: var(--color-primary);
+}
+.open-menu{
+    top: 20px;
+    right: 20px;
+    display: none;
+    position: absolute;
+    background: var(--color-primary);
+    width: 30px;
+    height: 30px;
+    font-size: 20px;
+    border-radius: 10%;
+}
+.close-menu{
+    top: 20px;
+    right: 20px;
+    display: none;
+    position: absolute;
+    width: 40px;
+    font-size: 35px;
+    height: 40px;
+    border-radius: 10%;
+    color: var(--color-primary);
+}
+#right{
+    display: none;
+}
+
+
+
+
+
+/* Estilos para dispositivos móviles */
+@media (max-width: 768px) {
+    header {
+      flex-direction: row;
+      height: auto;
+      align-items: center;
+      justify-content: space-between;
+      padding: 10px;
+    }
+  
+    .left {
+      margin-left: 0;
+      margin-top: 0;
+    }
+  
+    .right {
+      display: none;
+      position: absolute;
+      top: 60px;
+      left: 0;
+      width: 100%;
+      background-color: var(--color-body);
+      padding: 20px;
+      flex-direction: column;
+      align-items: center;
+      z-index: 1;
+    }
+  
+    .right a {
+      margin-bottom: 10px;
+    }
+  
+    .open-menu,
+    .close-menu {
+    background: var(--color-primary);
+    color: var(--color-primary);
+      display: block;
+      font-size: 38px;
+      cursor: pointer;
+    }
+    .open-menu{
+        margin-right: -80px;
+    }  
+    .close-menu {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+    }
+  
+    #right:checked ~ .right {
+      display: flex;
+    }
+  
+    #right:checked ~ .open-menu {
+      display: none;
+    }
+    .image {
+      margin-top: 50px;
+      margin-left: 0;
+      text-align: center;
+    }
+  
+    .image img {
+    margin-left: 60px;
+      width: 100%;
+      max-width: 400px;
+    }
+
+    .page1{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+  
+    .contenido h2 {
+      margin-top: 20px;
+      margin-left: 100px;
+      text-align: center;
+      font-size: 57px;
+    }
+  
+    .contenido h3 {
+      margin-left: 100px;
+      text-align: center;
+    }
+  
+    .contenido button {
+      margin-left: 130px;
+      width: 60%;
+    }
+
+    .about-us{
+        display: flex;
+        flex-direction: column-reverse;
+        margin-top: 150px;
+    }
+  
+    .contenido2 {
+      margin-left: 0;
+      margin-top: -30px;
+      text-align: center;
+    }
+  
+    .contenido2 h3,
+    .contenido2 h2,
+    .contenido2 p,
+    .contenido2 button {
+        margin-top: 10px;
+      margin-left: 50px;
+    }
+
+    .contenido2 h3{
+        text-align: center;
+    }
+    .contenido2 p{
+        font-size: 1.3rem;
+    }
+    .contenido2 button{
+        margin-top: 50px;
+    }
+    .image2 img {
+        margin-top: 70px;
+      margin-left: 40px;
+      padding-left: 0;
+    }
+    .food_menu{
+        text-align: center;
+        margin-left: 80px;
+        margin-top: 100px;
+    }
+    .gallery {
+      width: 90%;
+    }
+  
+    .fin{
+        margin-top: 1200px;
+        margin-left: 50px;
+    }
+
+    .services{
+        text-align: center;
+        margin-left: 30px;
+    }
+
+    .footer_content {
+        text-align: left;
+      width: 100%;
+      margin-top: 380px;
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .footer_fin {
+      width: 100%;
+      height: 100vh;
+        margin-top: 20px;
+      margin-bottom: 20px;
+    }
+  
+    .footer_fin2 {
+        display: flex;
+        flex-direction: column;
+      width: 100%;
+      text-align: center;
+        margin-left: 50px;
+        
+    }
+  
+    .icons {
+      text-align: center;
+      margin-left: 0px;
+      margin-top: 20px;
+   width: 100%;
+      display: flex;
+      justify-content: center;
+    }
+  
+    .right {
+      display: none;
+    }
+  
+    .open-menu,
+    .close-menu {
+      display: block;
+    }
+  
+    #right {
+      display: flex;
+      flex-direction: column;
+      position: absolute;
+      top: 70px;
+      right: 0;
+      background-color: var(--color-body);
+      width: 100%;
+      padding: 20px;
+      z-index: 1;
+    }
+  
+    #right a {
+      margin-bottom: 10px;
+    }
+  }

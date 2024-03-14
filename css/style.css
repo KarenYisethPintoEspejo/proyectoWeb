@@ -87,9 +87,14 @@ aside a {
   .product-grid {
     overflow-y: scroll;
     height: 76vh;
+    width: 100%;
+    padding-right: 20px; 
     margin-top: 0px;
+    margin-right:100px ;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
+    scrollbar-width: thin;
+    scrollbar-color: #340996 #f2f2f2;
     
   }
   
@@ -129,12 +134,26 @@ aside a {
   }
 
   .principal{
+    border: 1px solid blue;
     background: red;
-    padding: 40px;
+    padding: 30px;
+    padding-right: 40px;
     border-radius: 40px;
     padding-top: 0.5px;
+    width:1000px;
   }
 
+  .product-grid::-webkit-scrollbar {
+    width: 12px;
+  }
+  
+  .product-grid::-webkit-scrollbar-thumb {
+    background-color: #340996;
+  }
+  
+  .product-grid::-webkit-scrollbar-thumb:hover {
+    background-color: #555;
+  }
   
 
 

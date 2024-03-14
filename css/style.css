@@ -450,10 +450,10 @@ header{
 }
 .right a{
     text-decoration: none;
-    color: var(--color-secundary);
+    color: var(--color-primary);
 }
 .right a{
-    color: var(--color-secundary);
+    color: var(--color-primary);
 }
 .right a:hover{
     transition: 0.3s ease;
@@ -461,7 +461,6 @@ header{
     color: var(--color-primary);
 }
 .open-menu{
-    top: 20px;
     right: 20px;
     display: none;
     position: absolute;
@@ -471,8 +470,10 @@ header{
     font-size: 20px;
     border-radius: 10%;
 }
+
+
+
 .close-menu{
-    top: 20px;
     right: 20px;
     display: none;
     position: absolute;
@@ -524,9 +525,12 @@ header{
       margin-bottom: 10px;
     }
   
+    
+
+
     .open-menu,
     .close-menu {
-    background: var(--color-primary);
+    background: var(--color-body);
     color: var(--color-primary);
       display: block;
       font-size: 38px;
@@ -547,7 +551,9 @@ header{
   
     #right:checked ~ .open-menu {
       display: none;
+      
     }
+
     .image {
       margin-top: 50px;
       margin-left: 0;
@@ -622,6 +628,8 @@ header{
         font-size: 1.3rem;
     }
     .contenido2 button{
+        width: 200px;
+        margin-left: 50px;
         margin-top: 30px;
     }
     .image2 img {
@@ -657,23 +665,41 @@ header{
     }
 
     .fin{
-        margin-top: 1000px;
-        margin-left: 50px;
+        margin-top: 1200px;
+        margin-left: 60px;
+        height: 270px;
+        margin-bottom: 100px;
     }
-
+    .fin h2{
+        font-size: 30px;
+    }
+    .fin button{
+        width: 200px;
+    }
 
   
     .footer_content {
-        margin-top: 400px;
+        margin-top: 360px;
           flex-direction: column;
           align-items: center;
         }
       
     .footer_fin, .footer_fin2 {
           width: 80%;
-          margin-bottom: 20px;
+          margin-bottom: 100px;
         }
   
+
+    .footer_fin2{
+        width: 80%;
+        margin-left: 100px;
+    }
+
+    .footer_fin2 h3{
+        margin-left: 40px;
+    }
+
+    
     .right {
       display: none;
     }
@@ -684,7 +710,7 @@ header{
     }
   
     #right {
-      display: flex;
+      display: none;
       flex-direction: column;
       position: absolute;
       top: 70px;

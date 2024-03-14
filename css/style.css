@@ -491,7 +491,7 @@ header{
 
 
 /* Estilos para dispositivos móviles */
-@media (max-width: 768px) {
+@media (max-width: 800px) {
     header {
       flex-direction: row;
       height: auto;

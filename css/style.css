@@ -13,7 +13,7 @@
   
   /* Encabezado */
 header {
-  margin-top: 38px;
+  margin-top: 0px;
     background-color: #333;
     color: #fff;
     padding: 10px;
@@ -24,7 +24,6 @@ aside {
   display: flex;
   flex-direction: column;
     background-color: #f2f2f2;
-    padding: 10px;
   }
   
 aside ul {
@@ -47,7 +46,13 @@ aside a {
   
   /* Contenido principal */
   main {
-    padding: 20px;
+    padding: 50px;
+  }
+  
+  main h2{
+    font-size: 40px;
+    margin-left: 20px;
+    margin-top: 30px;
   }
   .container{
     display: flex;
@@ -61,44 +66,52 @@ aside a {
   }
 
   .opcion a, .footer p{
+    margin-left: 50px;
     display: flex;
     flex-direction: column;
     margin-top: 30px;
   }
 
   .opcion__car a{
+    margin-left: 50px;
     display: flex;
     flex-direction: column;
     margin-top: 100px
   }
 
   .footer p{
-    margin-top: 280px;
+    margin-left: 50px;
+    margin-top: 230px;
   }
   
   .product-grid {
+    overflow-y: scroll;
+    height: 76vh;
+    margin-top: 0px;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    grid-gap: 20px;
-    border: 1px solid red;
+    
   }
   
   .product-card {
+    margin: 20px;
     background-color: #f2f2f2;
     padding: 20px;
+    width: 80%;
+    height: 300px;
     text-align: center;
-    border-radius: 5px;
+    border-radius: 40px;
   }
   
   .product-image {
-    width: 100px;
-    height: 100px;
+    width: 100%;
+    height: 100%;
     background-color: #ddd;
     margin: 0 auto 10px;
   }
   
   .product-card h3 {
-    margin-top: 0;
+    margin-top: -110px;
   }
   
   .product-card button {
@@ -114,31 +127,15 @@ aside a {
     cursor: pointer;
     border-radius: 5px;
   }
-  
-  /* Pie de página */
-  footer {
-    background-color: #333;
-    color: #fff;
-    padding: 10px;
-    text-align: center;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-  
-  .cart-count {
-    display: flex;
-    align-items: center;
-  }
-  
-  .cart-number {
-    background-color: #4CAF50;
-    color: #fff;
-    padding: 5px 10px;
-    border-radius: 50%;
-    margin-left: 10px;
+
+  .principal{
+    background: red;
+    padding: 40px;
+    border-radius: 40px;
+    padding-top: 0.5px;
   }
 
+  
 
 
 

@@ -1,4 +1,4 @@
-/* Estilos generales */
+@import url(variables.css);
 * {
   text-decoration: none;
   box-sizing: content-box;
@@ -13,17 +13,20 @@
   
   /* Encabezado */
 header {
-  margin-top: 0px;
-    background-color: #333;
-    color: #fff;
+  margin: 10px;
+  text-align: center;
+    background-color: var(--color-primary);
+    color: var(--color-secundary);
     padding: 10px;
+    font-size: 30px;
   }
-  
+
+
   /* Navegación */
 aside {
   display: flex;
   flex-direction: column;
-    background-color: #f2f2f2;
+    background-color:var(--color-primary);
   }
   
 aside ul {
@@ -41,11 +44,12 @@ aside li {
   
 aside a {
     text-decoration: none;
-    color: #333;
+    color: var(--color-secundary);
   }
   
   /* Contenido principal */
   main {
+    background: var(--color-primary);
     padding: 50px;
   }
   
@@ -57,7 +61,7 @@ aside a {
   .container{
     display: flex;
     flex-direction: column;
-    font-size: 30px;
+    font-size: 26px;
   }
   .opcion{
     display: flex;
@@ -66,60 +70,67 @@ aside a {
   }
 
   .opcion a, .footer p{
-    margin-left: 50px;
+    margin-left: 20px;
     display: flex;
     flex-direction: column;
     margin-top: 30px;
   }
 
   .opcion__car a{
-    margin-left: 50px;
+    margin-left: 20px;
     display: flex;
     flex-direction: column;
     margin-top: 100px
   }
 
   .footer p{
+    color: var(--color-secundary);
     margin-left: 50px;
-    margin-top: 230px;
+    margin-top: 180px;
   }
   
+  section{
+    margin-right: -50px;
+  }
+
   .product-grid {
     overflow-y: scroll;
-    height: 76vh;
+    height: 72vh;
     width: 100%;
     padding-right: 25px; 
-    margin-top: 0px;
+    margin-top: 10px;
     margin-right:100px ;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     scrollbar-width: thin;
-    scrollbar-color: #340996 #f2f2f2;
+    scrollbar-color: var(--color-ternario) var(--color-primary);
     
   }
   
   .product-card {
+    border: 5px solid var(--color-primary);
     margin: 20px;
-    background-color: #f2f2f2;
-    padding: 20px;
+    background-color: var(--color-ternario);
+    padding: 10px;
     width: 80%;
-    height: 230px;
+    height: 240px;
     text-align: center;
     border-radius: 40px;
   }
   
   .product-image {
-    width: 100%;
-    height: 100%;
-    background-color: #ddd;
+    width: 90%;
+    height: 97%;
+    background-color: var(--color-ternario);
     margin: 0 auto 10px;
   }
   
   .product-card h3{
     margin-left: 0px;
     font-size: 15px;
-    margin-top: -110px;
-    margin-bottom: 15px;
+    width: 100px;
+    margin-top: -100px;
+    margin-bottom: 10px;
   }
 
   .product-card p{
@@ -127,28 +138,27 @@ aside a {
   }
   
   .product-card button {
-    border: 1px solid red;
-    background-color: #4CAF50;
-    color: #fff;
-    border: none;
-    padding: 7px 15px;
+    background-color: var(--color-ternario);
+    color: var(--color-secundary);
+    border: 2px solid var(--color-primary);
+    padding: 6px 10px;
     text-decoration: none;
     display: inline-block;
-    font-size: 16px;
-    margin-left: 80px;
+    font-size: 14px;
+    margin-left: 95px;
     cursor: pointer;
     border-radius: 5px;
 
   }
 
   .principal{
-    border: 1px solid blue;
-    background: red;
-    padding: 30px;
+    border: 10px solid var(--color-ternario);
+    background: var(--color-secundary);
+    padding: 15px;
     padding-right: 40px;
     border-radius: 40px;
     padding-top: 0.5px;
-    width:1000px;
+    width:90%;
   }
 
   /* .product-grid::-webkit-scrollbar {
@@ -169,16 +179,21 @@ aside a {
     width: 80px;
     height: 20px;
     margin-left: 10px;
-    margin-top: 40px;
+    margin-top: 50px;
     
   }
 
   .boton{
     margin-left: 20px;
-    margin-top: 0px;
+    margin-top: -12px;
     width: 0px;
     height: 0px;
   }
+
+  /* .texto{
+    
+    width: 20px;
+  } */
 
 
 

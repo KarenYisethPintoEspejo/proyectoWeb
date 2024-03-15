@@ -115,22 +115,30 @@ aside a {
     margin: 0 auto 10px;
   }
   
-  .product-card h3 {
+  .product-card h3{
+    margin-left: 0px;
+    font-size: 15px;
     margin-top: -110px;
+    margin-bottom: 15px;
+  }
+
+  .product-card p{
+    font-size: 15px;
   }
   
   .product-card button {
+    border: 1px solid red;
     background-color: #4CAF50;
     color: #fff;
     border: none;
-    padding: 10px 20px;
-    text-align: center;
+    padding: 7px 15px;
     text-decoration: none;
     display: inline-block;
     font-size: 16px;
-    margin-top: 10px;
+    margin-left: 80px;
     cursor: pointer;
     border-radius: 5px;
+
   }
 
   .principal{
@@ -155,12 +163,22 @@ aside a {
     background-color: #555;
   } */
   
-  .texto h3, p, button{
+  
+
+  .texto2{
+    width: 80px;
+    height: 20px;
+    margin-left: 10px;
+    margin-top: 40px;
     
-    border: 1px solid red;
   }
 
-
+  .boton{
+    margin-left: 20px;
+    margin-top: 0px;
+    width: 0px;
+    height: 0px;
+  }
 
 
 

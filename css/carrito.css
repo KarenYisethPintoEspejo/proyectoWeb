@@ -46,6 +46,8 @@ aside a {
     text-decoration: none;
     color: var(--color-secundary);
   }
+  aside a:hover {
+    color: var(--color-ternario); }
   
   /* Contenido principal */
   main {
@@ -186,6 +188,7 @@ aside a {
     height: 0px;
   }
 
+
   /* .texto{
     
     width: 20px;
@@ -225,9 +228,17 @@ aside a {
     width: 140px;
     height: 30px;
   }
+
+  .product-card_1 button:hover{
+    color: var(--color-primary);
+  }
 .fin button{
     margin-top: 10px;
     margin-left: 25px;
+}
+
+.fin button:hover{
+  color: var(--color-primary);
 }
 
 .fin_2{

@@ -82,6 +82,11 @@ aside a {
     flex-direction: column;
     margin-top: 100px
   }
+  aside a:hover {
+    color: var(--color-ternario);
+    
+}
+
 
   .footer p{
     color: var(--color-secundary);
@@ -162,6 +167,10 @@ aside a {
     cursor: pointer;
     border-radius: 5px;
 
+  }
+
+  .product-card button:hover{
+    color: var(--color-primary);
   }
 
   .principal{

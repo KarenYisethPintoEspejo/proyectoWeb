@@ -46,6 +46,8 @@ aside a {
     text-decoration: none;
     color: var(--color-secundary);
   }
+  aside a:hover {
+    color: var(--color-ternario); }
   
   /* Contenido principal */
   main {
@@ -118,6 +120,7 @@ aside a {
     border-radius: 40px;
   }
   
+  
   .product-image2 img{
     width: 62%;
     height: 40%;
@@ -149,6 +152,10 @@ aside a {
     cursor: pointer;
     border-radius: 5px;
 
+  }
+
+  .product-card button:hover{
+    color: var(--color-primary);
   }
 
   .principal{

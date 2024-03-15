@@ -96,25 +96,31 @@ aside a {
   .product-grid {
     overflow-y: scroll;
     height: 72vh;
-    width: 100%;
+    width: 105%;
     padding-right: 25px; 
-    margin-top: 10px;
+    margin-top: 20px;
     margin-right:100px ;
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(1, 1fr);
     scrollbar-width: thin;
     scrollbar-color: var(--color-ternario) var(--color-primary);
     
   }
   
   .product-card {
+    margin-left: 0px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    display: grid;
+    font-size: 20px;
+    grid-template-columns: repeat(6, 1fr);
     border: 5px solid var(--color-primary);
-    margin: 20px;
+    margin: 10px;
     background-color: var(--color-ternario);
-    padding: 10px;
-    width: 80%;
-    height: 240px;
-    text-align: center;
+    padding: 7px;
+    width: 95%;
+    height: 120px;
+    gap: 20px;
     border-radius: 40px;
   }
   
@@ -123,32 +129,6 @@ aside a {
     height: 97%;
     background-color: var(--color-ternario);
     margin: 0 auto 10px;
-  }
-  
-  .product-card h3{
-    margin-left: 0px;
-    font-size: 15px;
-    width: 100px;
-    margin-top: -100px;
-    margin-bottom: 10px;
-  }
-
-  .product-card p{
-    font-size: 15px;
-  }
-  
-  .product-card button {
-    background-color: var(--color-ternario);
-    color: var(--color-secundary);
-    border: 2px solid var(--color-primary);
-    padding: 6px 10px;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 14px;
-    margin-left: 95px;
-    cursor: pointer;
-    border-radius: 5px;
-
   }
 
   .principal{
@@ -175,13 +155,7 @@ aside a {
   
   
 
-  .texto2{
-    width: 80px;
-    height: 20px;
-    margin-left: 10px;
-    margin-top: 50px;
-    
-  }
+  
 
   .boton{
     margin-left: 20px;
@@ -196,4 +170,11 @@ aside a {
   } */
 
 
+.product-card h3{
+    margin-top: 40px ;
+}
 
+.icon i{
+    margin-top: 30px;
+    font-size: 70px;
+}

@@ -118,9 +118,9 @@ aside a {
     border-radius: 40px;
   }
   
-  .product-image {
-    width: 90%;
-    height: 97%;
+  .product-image img{
+    width: 80%;
+    height: 40%;
     background-color: var(--color-ternario);
     margin: 0 auto 10px;
   }
@@ -179,7 +179,7 @@ aside a {
     width: 80px;
     height: 20px;
     margin-left: 10px;
-    margin-top: 50px;
+    margin-top: 90px;
     
   }
 
